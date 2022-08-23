@@ -14,14 +14,14 @@ function Header( {user, setUser}) {
   const { theme, setTheme } = useTheme();
   const [open, setOpen] = useState(false);
 
-  const [login , setLogin] = useState();
+ 
 
   const loginUser = useContext(userContext)
   return (
     <div className="flex items-center justify-between">
       {/* left */}
       <div>
-        <h2 className="font-bold font-sans">~NUURAH</h2>
+        <h2 className="font-bold font-sans">~FUNIt</h2>
       </div>
       <div className="cursor-pointer md:hidden" onClick={() => setOpen(!open)}>
         <MenuIcon className="w-6" />

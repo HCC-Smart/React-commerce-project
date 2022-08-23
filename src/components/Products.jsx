@@ -10,7 +10,7 @@ function Products() {
         <h1>18 products</h1>
         <div>
           <select className="py-2 px-8">
-            <option>Reelevnce</option>
+            <option>Relevnce</option>
             <option>name (A-z)</option>
           </select>
         </div>

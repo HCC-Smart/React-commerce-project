@@ -26,7 +26,7 @@ function Home() {
           <img src={HomeImage} alt="" />
         </div>
       </div>
-      <Feutures />
+      
     </>
   );
 }

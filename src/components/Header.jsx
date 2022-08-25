@@ -11,7 +11,7 @@ import { useContext, useState } from "react";
 import { useTheme } from "next-themes";
 import { userContext } from "../App";
 function Header( {user, setUser}) {
-  const { theme, setTheme } = useTheme();
+
   const [open, setOpen] = useState(false);
 
  
@@ -35,19 +35,7 @@ function Header( {user, setUser}) {
         <Link to="/Products">Products</Link>
         
         <SearchIcon className="w-6" />
-        {/* dark mode toggle */}
-        {theme === "dark" ? (
-          <MoonIcon
-            className="w-7 cursor-pointer "
-            onClick={() => setTheme("light")}
-          />
-        ) : (
-          <SunIcon
-            className="w-7 cursor-pointer"
-            onClick={() => setTheme("dark")}
-          />
-          
-        )}
+     
       <button  className="px-4 py-1 mt-4 text-white bg-orange-600 rounded-lg hover:bg-blue-900" onClick={() => setUser("")}>Logout</button>
 
       </div>
